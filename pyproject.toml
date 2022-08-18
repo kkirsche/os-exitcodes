@@ -4,8 +4,8 @@ version = "1.0.0"
 description = "A cross-operating-system compatible library for os.EX_* constants"
 authors = ["Kevin Kirsche <kev.kirsche@gmail.com>"]
 readme = "README.md"
-homepage = "https://github.com/kkirsche/exitcodes"
-repository = "https://github.com/kkirsche/exitcodes"
+homepage = "https://github.com/kkirsche/os-exitcodes"
+repository = "https://github.com/kkirsche/os-exitcodes"
 keywords = ["exit codes", "exit", "sysexit"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -18,18 +18,18 @@ include = ["README.md"]
 
 
 [tool.poetry.dependencies]
-python = ">=3.7" # for pytest
+python = ">=3.7" # pytest requires 3.7, flake8 3.6.1
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"
+codespell = "^2.2.1"
 example-isort-formatting-plugin = "^0.0.4"
 example-isort-sorting-plugin = "^0.0.3"
-isort = "^5.10.1"
-mypy = "^0.971"
 flake8 = "^5.0.4"
 flake8-bugbear = "^22.7.1"
-codespell = "^2.2.1"
 interrogate = "^1.5.0"
+isort = "^5.10.1"
+mypy = "^0.971"
 pytest = "^7.1.2"
 
 [build-system]
