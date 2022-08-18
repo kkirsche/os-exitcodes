@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "os_exitcodes"
-version = "1.0.0"
+version = "1.0.1"
 description = "A cross-operating-system compatible library for os.EX_* constants"
 authors = ["Kevin Kirsche <kev.kirsche@gmail.com>"]
 readme = "README.md"
