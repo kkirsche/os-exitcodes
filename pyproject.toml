@@ -3,6 +3,19 @@ name = "exitcodes"
 version = "1.0.0"
 description = "A cross-operating-system compatible library for os.EX_* constants"
 authors = ["Kevin Kirsche <kev.kirsche@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/kkirsche/exitcodes"
+repository = "https://github.com/kkirsche/exitcodes"
+keywords = ["exit codes", "exit", "sysexit"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+include = ["README.md"]
+
 
 [tool.poetry.dependencies]
 python = ">=3.7" # for pytest
