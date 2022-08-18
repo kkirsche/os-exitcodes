@@ -6,12 +6,20 @@ If these constants are available, they will be re-exported directly from `os`, o
 
 This library also provides an enum version of the exit codes, if that is of value.
 
+Apologies for the weird PyPi name, they're a bit overly restrictive and don't point to what specifically is the conflicting package.
+
+## Installation
+
+```shell
+python -m pip install -U os-exitcodes
+```
+
 ## Usage
 
 ### Constants
 
 ```python
-from exitcodes import (
+from os_exitcodes import (
     EX_OK,
     EX_USAGE,
 )
@@ -35,7 +43,7 @@ if __name__ == "__main__":
 ### Enumeration
 
 ```python
-from exitcodes import ExitCode
+from os_exitcodes import ExitCode
 from random import choice
 
 def is_valid_usage() -> bool:

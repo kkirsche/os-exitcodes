@@ -1,6 +1,6 @@
 from enum import IntEnum
 
-from exitcodes.int_variant import (
+from os_exitcodes.int_variant import (
     EX_CANTCREAT,
     EX_CONFIG,
     EX_DATAERR,

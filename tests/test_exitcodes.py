@@ -1,4 +1,4 @@
-from exitcodes import (
+from os_exitcodes import (
     EX_CANTCREAT,
     EX_CONFIG,
     EX_DATAERR,
