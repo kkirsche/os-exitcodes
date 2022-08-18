@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "exitcodes"
+version = "1.0.0"
+description = "A cross-operating-system compatible library for os.EX_* constants"
+authors = ["Kevin Kirsche <kev.kirsche@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7" # for pytest
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+example-isort-formatting-plugin = "^0.0.4"
+example-isort-sorting-plugin = "^0.0.3"
+isort = "^5.10.1"
+mypy = "^0.971"
+flake8 = "^5.0.4"
+flake8-bugbear = "^22.7.1"
+codespell = "^2.2.1"
+interrogate = "^1.5.0"
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+include = '\.pyi?$'
+line-length = 88
+target-version = ['py34']
+
+[tool.isort]
+formatter = "example"
+profile = "black"
+remove_redundant_aliases = false
+sort_order = "natural_plus"
+
+[tool.interrogate]
+color = true
+exclude = ["build", "test"]
+fail-under = 100
+ignore-init-method = false
+ignore-init-module = true
+ignore-magic = false
+ignore-module = true
+ignore-nested-classes = false
+ignore-nested-functions = false
+ignore-private = false
+ignore-property-decorators = false
+ignore-semiprivate = false
+ignore-setters = false
+quiet = false
+verbose = 1
+
+
+[tool.mypy]
+follow_imports = "normal"
+plugins = []
+python_version = 3.6
+strict = true
+warn_return_any = true
+warn_unused_configs = true
